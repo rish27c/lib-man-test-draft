@@ -33,7 +33,7 @@ def ed(inp:str, manual:bool=False):
     if manual==True:
         if inp==None or inp=='':
             raise ValueError('libED::"Empty String->NoneType"')
-        elif len(inp)>2500:
+        elif len(inp)>7500:
             print('libED->Error:Too large string to process.')
             raise IndexError('libED::"The length of characters surpasses the input limit"')
         elif len(inp)%5!=0:
